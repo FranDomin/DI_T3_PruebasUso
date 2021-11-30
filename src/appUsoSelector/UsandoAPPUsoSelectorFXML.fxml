@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import controlDeslizamiento.ControlDeslizamiento?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane id="StackPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appUsoSelector.APPUsoSelectorController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+         <children>
+            <Label text="Selectores" textAlignment="CENTER" textFill="#9c0505">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <ControlDeslizamiento fx:id="deslizamientoSuperior" onAction="#accionSup" />
+            <ControlDeslizamiento fx:id="deslizamientoInferior" onAction="#accionInf" />
+            <Label fx:id="lblTexto" textFill="#03b10f">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</StackPane>

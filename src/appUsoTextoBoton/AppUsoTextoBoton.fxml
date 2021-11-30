@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import campoTextoBoton.CampoTextoBoton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="302.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appUsoTextoBoton.AppUsoTextoBotonController">
+   <children>
+      <VBox alignment="CENTER" layoutX="16.0" prefHeight="290.0" prefWidth="371.0" spacing="15.0">
+         <children>
+            <CampoTextoBoton fx:id="campoSuperior" onAction="#onActionSup" />
+            <CampoTextoBoton fx:id="campoInferior" onAction="#onActionInf" />
+            <Label fx:id="lblTexto" alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="317.0" text="Pulsa el botón y muestra el texto en esta etiqueta." textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
